@@ -503,12 +503,12 @@ img {
   padding: 8px 16px;
 
   font-size: 12px;
-  line-height: 2;
+  line-height: 1.5;
   letter-spacing: 0.04em;
 
   border-radius: 4px;
   border: 1px solid var(--white-color);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 
   background-color: transparent;
   color: var(--white-color);
@@ -523,11 +523,11 @@ img {
 }
 
 .subscribe-form-button {
+  min-width: 165px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 8px 24px;
-  gap: 16px;
 
   font-family: inherit;
   font-weight: 500;
@@ -544,6 +544,8 @@ img {
 }
 
 .subscribe-form-icon {
+  margin-left: 16px;
+
   fill: currentColor;
 }
 
@@ -651,8 +653,8 @@ img {
   margin-bottom: 4px;
 
   font-size: 12px;
-  line-height: 1.167;
-  letter-spacing: 0.02em;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
 
   color: var(--text-color-secondary);
 }
@@ -719,7 +721,7 @@ img {
   line-height: 1.17;
   letter-spacing: 0.04em;
 
-  color: var(--text-color-secondary);
+  color: var(--backdrop-color);
   background-color: transparent;
 
   transition: border-color var(--duration) var(--timing-function);
@@ -741,8 +743,8 @@ img {
   user-select: none;
 
   font-size: 12px;
-  line-height: 1.167;
-  letter-spacing: 0.02em;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
 
   color: var(--text-color-secondary);
 }
@@ -766,8 +768,8 @@ img {
 }
 
 .checkbox-input:checked + .checkbox-label .custom-checkbox {
-  fill: var(--white-color);
-  background-color: var(--brand-color);
+  fill: var(--light-color-main);
+  background-color: var(--pressed-color);
 
   border: none;
 }
